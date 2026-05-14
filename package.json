@@ -1,0 +1,11 @@
+{
+  "name": "portfolio-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "export-pdfs": "node scripts/export-pdfs.mjs"
+  },
+  "devDependencies": {
+    "puppeteer": "^24.2.0"
+  }
+}
