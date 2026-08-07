@@ -71,10 +71,10 @@ function startStaticServer() {
 }
 
 const JOBS = [
-  { view: "human", lang: "ru", file: "Skriganyuk-Vitaliy-portfolio-human-ru.pdf" },
-  { view: "human", lang: "en", file: "Skriganyuk-Vitaliy-portfolio-human-en.pdf" },
-  { view: "ats", lang: "ru", file: "Skriganyuk-Vitaliy-CV-ATS-ru.pdf" },
-  { view: "ats", lang: "en", file: "Skriganyuk-Vitaliy-CV-ATS-en.pdf" },
+  { view: "human", lang: "ru", file: "Skriganiuk-Vitalii-portfolio-human-ru.pdf" },
+  { view: "human", lang: "en", file: "Skriganiuk-Vitalii-portfolio-human-en.pdf" },
+  { view: "ats", lang: "ru", file: "Skriganiuk-Vitalii-CV-ATS-ru.pdf" },
+  { view: "ats", lang: "en", file: "Skriganiuk-Vitalii-CV-ATS-en.pdf" },
 ];
 
 async function main() {

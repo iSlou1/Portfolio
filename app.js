@@ -65,8 +65,8 @@
     var lang = root.getAttribute("data-lang") || "ru";
     var filename =
       view === "ats"
-        ? "Skriganyuk-Vitaliy-CV-ATS-" + lang + ".pdf"
-        : "Skriganyuk-Vitaliy-portfolio-human-" + lang + ".pdf";
+        ? "Skriganiuk-Vitalii-CV-ATS-" + lang + ".pdf"
+        : "Skriganiuk-Vitalii-portfolio-human-" + lang + ".pdf";
     var a = document.createElement("a");
     a.href = "exports/" + filename;
     a.download = filename;
