@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" data-lang="ru" data-view="human" data-theme="dark">
+<html lang="ru" data-lang="ru" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -13,18 +13,11 @@
 </head>
 <body>
   <header class="topbar no-print">
-    <div class="view-toggle" role="tablist" aria-label="Режим отображения">
-      <button type="button" class="view-toggle__btn is-active" data-view="human" id="view-human" role="tab" aria-selected="true" title="Оформление для людей">
-        <span class="view-toggle__icon" aria-hidden="true">👤</span>
-        <span class="l-ru">Human-friendly</span><span class="l-en">Human-friendly</span>
-      </button>
-      <button type="button" class="view-toggle__btn" data-view="ats" id="view-ats" role="tab" aria-selected="false" title="Простой текст для ATS и печати">
-        <span class="view-toggle__icon" aria-hidden="true">📄</span>
-        <span class="l-ru">ATS-friendly</span><span class="l-en">ATS-friendly</span>
-      </button>
+    <div class="topbar-brand">
+      <span class="l-ru">Резюме</span><span class="l-en">Resume</span>
     </div>
     <div class="topbar-actions">
-      <button type="button" class="btn btn-primary js-download-pdf" title="Скачать готовый PDF (светлая тема печати): Human или ATS, язык как на странице">
+      <button type="button" class="btn btn-primary js-download-pdf" title="Скачать PDF (язык как на странице)">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
         <span class="l-ru">Скачать PDF</span><span class="l-en">Download PDF</span>
       </button>
@@ -57,29 +50,27 @@
             <p class="hero-status__line l-ru">
               <strong>Гражданство:</strong>
               <span class="hero-status__flags" aria-hidden="true">🇷🇺</span> Россия
-              <span class="hero-status__sep">·</span>
-              <span class="hero-status__flags" aria-hidden="true">🇪🇪</span> Эстония
             </p>
             <p class="hero-status__line l-en">
               <strong>Citizenship:</strong>
-              <span class="hero-status__flags" aria-hidden="true">🇷🇺</span> Russia
-              <span class="hero-status__sep">·</span>
               <span class="hero-status__flags" aria-hidden="true">🇪🇪</span> Estonia
             </p>
             <p class="hero-status__line l-ru">
-              <strong>Право на работу:</strong> Россия, Европейский союз <span class="hero-status__flags" aria-hidden="true">🇪🇺</span>
-              <span class="hero-status__sep">·</span> готов к переезду
+              <strong>Право на работу:</strong> Россия
+              <span class="hero-status__sep">·</span> готов к редким командировкам · удалённо
             </p>
             <p class="hero-status__line l-en">
-              <strong>Work authorization:</strong> Russia, European Union <span class="hero-status__flags" aria-hidden="true">🇪🇺</span>
-              <span class="hero-status__sep">·</span> open to relocation
+              <strong>Work authorization:</strong> European Union <span class="hero-status__flags" aria-hidden="true">🇪🇺</span>
+              <span class="hero-status__sep">·</span> open to remote · open to relocation
             </p>
           </div>
           <div class="contacts">
+            <a class="l-ru" href="tel:+79186976444">+7 (918) 697-64-44</a>
+            <a class="l-en" href="tel:+37258047919">+372 5804 7919</a>
             <a href="mailto:vetalskri@gmail.com">vetalskri@gmail.com</a>
             <a href="https://t.me/dev_vito" target="_blank" rel="noopener noreferrer">Telegram</a>
             <a href="https://www.linkedin.com/in/vitalii-skriganyuk/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="https://hh.ru" target="_blank" rel="noopener noreferrer"><span class="l-ru">HeadHunter</span><span class="l-en">HeadHunter</span></a>
+            <a class="l-ru" href="https://hh.ru" target="_blank" rel="noopener noreferrer">HeadHunter</a>
           </div>
         </div>
       </header>
@@ -95,20 +86,18 @@
           </div>
           <div class="panel">
             <ul class="hr-list l-ru">
-              <li><span class="hl">Senior / Team Lead iOS</span> — <span class="hl">8+ лет</span> <span class="hl">коммерческого опыта</span> в iOS: <span class="hl">бигтех-компании и стартапы</span>, в сфере <span class="hl">финтеха, медиа и стриминга, маркетплейсов</span>.</li>
-              <li>В Okko — <span class="hl">лид спорт‑направления</span> (7 человек): <span class="hl">сходимость спринтов 20–40% → 80–90%</span> за месяц, снижение BugRate к целевому уровню, RnD под новые платформы.</li>
-              <li>В ГПБ — <span class="hl">грамота за успехи, 2023</span>, <span class="hl">3‑е место в Баготоне</span>; <span class="hl">40+ фич‑модулей</span>, сборка быстрее на <span class="hl">~30–40%</span>, <span class="hl">презентация SwiftUI</span> для команды и шаги внедрения.</li>
-              <li>В ГПБ — <span class="hl">ускоренная разработка МВП</span> на <span class="hl">service-driving UI</span>: с <span class="hl">полутора месяцев до трёх недель</span> на цикл типовой фичи.</li>
-              <li>В <span class="hl">WhyNot</span> — <span class="hl">собственный B2C dating</span> с нуля: <span class="hl">PO + Lead iOS end‑to‑end</span>, аналитика, координация backend, сильная вовлечённость в UX/UI.</li>
-              <li>Опираюсь на качество, предсказуемость поставки и влияние на <span class="hl">конечный продукт</span>, а не только на закрытие задач.</li>
+              <li><span class="hl">Senior / Team Lead iOS</span>, <span class="hl">8+ лет</span> коммерческой разработки: финтех (<span class="hl">Газпромбанк</span>), медиа/стриминг (<span class="hl">Okko</span>), маркетплейсы и B2C.</li>
+              <li>Вёл команду до <span class="hl">7 человек</span>: сходимость спринтов <span class="hl">20–40% → 80–90%</span>, снижение BugRate, релизы через <span class="hl">FT/FF</span>.</li>
+              <li>Проектировал мульти‑модульную архитектуру (<span class="hl">40+ модулей</span>), <span class="hl">Backend-Driven UI</span>, OAuth, CI/CD; сборка быстрее на <span class="hl">19–24%</span>.</li>
+              <li>Собрал <span class="hl">B2C dating</span>-продукт с нуля: архитектура, Design System, WebSocket, аналитика.</li>
+              <li>Ищу <span class="hl">Senior или Lead iOS</span> в сильном продукте, <span class="hl">удалённо</span>.</li>
             </ul>
             <ul class="hr-list l-en">
-              <li><span class="hl">Senior / Team Lead iOS</span> — <span class="hl">8+ years</span> of <span class="hl">commercial experience</span> in iOS: <span class="hl">big-tech companies and startups</span> in <span class="hl">fintech, media and streaming, and marketplaces</span>.</li>
-              <li>At Okko — <span class="hl">lead for the sports squad</span> (7 people): <span class="hl">sprint predictability 20–40% → 80–90%</span> in a month, BugRate brought to target, RnD for new platforms.</li>
-              <li>At Gazprombank — <span class="hl">2023 merit certificate</span> for strong performance, <span class="hl">3rd in bugathon</span>; <span class="hl">40+ feature modules</span>, <span class="hl">~30–40%</span> faster builds, <span class="hl">SwiftUI team presentation</span> and rollout alignment.</li>
-              <li>At Gazprombank — <span class="hl">faster MVP delivery</span> with <span class="hl">service-driving UI</span>: from <span class="hl">about six weeks to about three</span> per typical feature cycle.</li>
-              <li>At <span class="hl">WhyNot</span> — <span class="hl">own B2C dating</span> from scratch: <span class="hl">PO + Lead iOS end‑to‑end</span>, analytics, backend coordination, deep UX/UI involvement.</li>
-              <li>Focus on quality, predictable delivery, and impact on the <span class="hl">end product</span>, not ticket churn alone.</li>
+              <li><span class="hl">Senior / Lead iOS Engineer</span> with <span class="hl">8+ years</span> building fintech, streaming, marketplace, and B2C products.</li>
+              <li>Led a <span class="hl">7-person</span> iOS/QA squad at Okko (sprint predictability <span class="hl">20–40% → 80–90%</span>, BugRate −14%).</li>
+              <li>At Gazprombank: scaled modular architecture to <span class="hl">40+ modules</span>, cut build time by <span class="hl">19–24%</span>, MVP via <span class="hl">Server-Driven UI</span> (6 weeks → 3).</li>
+              <li>Built a <span class="hl">B2C dating app 0→1</span>: architecture, Design System, OAuth, WebSocket, Firebase analytics.</li>
+              <li>Seeking <span class="hl">Senior or Lead iOS</span> in a product-driven team. <span class="hl">Open to remote</span>.</li>
             </ul>
           </div>
         </section>
@@ -202,8 +191,8 @@
         <article class="card exp-card">
           <div class="card-head">
             <h3 style="margin:0;">WhyNot</h3>
-            <span class="card-meta l-ru">сент. 2025 — май 2026 · 9 мес.</span>
-            <span class="card-meta l-en">Sep 2025 — May 2026 · 9 mo</span>
+            <span class="card-meta l-ru">сент. 2025 — авг. 2026 · 1 год</span>
+            <span class="card-meta l-en">Sep 2025 — Aug 2026 · 1 yr</span>
           </div>
           <p class="card-company l-ru">B2C dating · Founder &amp; Lead iOS</p>
           <p class="card-company l-en">B2C dating · Founder &amp; Lead iOS</p>
@@ -326,8 +315,8 @@
                 <li class="l-en">Started as iOS Senior, grew to team lead.</li>
                 <li class="l-ru">Презентация для команды: SwiftUI — что это, чем отличается от UIKit, как встраивается в текущий стек; плюсы/минусы, ограничения, когда переходить; итог — общая картина и договорённость по дальнейшим шагам внедрения.</li>
                 <li class="l-en">Team presentation on SwiftUI vs UIKit, integration, pros/cons, limits, rollout plan — aligned next steps.</li>
-                <li class="l-ru">Участвовал в переходе на мульти‑модульную архитектуру: разбили монолит на 40+ отдельных фичей, ускорили сборку на 30–40%. Своя DesignSystem, Core, Foundation и другие модули.</li>
-                <li class="l-en">Multi‑module migration: split the monolith into 40+ feature modules, ~30–40% faster builds; DesignSystem, Core, Foundation, and other modules.</li>
+                <li class="l-ru">Участвовал в переходе на мульти‑модульную архитектуру: разбили монолит на 40+ отдельных фичей, ускорили сборку на 19–24%. Своя DesignSystem, Core, Foundation и другие модули.</li>
+                <li class="l-en">Multi‑module migration: split the monolith into 40+ feature modules, ~19–24% faster builds; DesignSystem, Core, Foundation, and other modules.</li>
                 <li class="l-ru">Внедрил подход <span class="hl">service-driving UI</span>: за счёт связки сервисного слоя и UI сократил цикл типовой фичи примерно с <span class="hl">полутора месяцев до трёх недель</span>.</li>
                 <li class="l-en">Introduced <span class="hl">service-driving UI</span>: tighter service/UI coupling cut a typical feature cycle from <span class="hl">about six weeks to about three</span>.</li>
                 <li class="l-ru">Командой заняли 3‑е место в Баготоне ГПБ, закрыв более 90 багов в мобильном банке. Грамота за успехи 2023.</li>
@@ -347,13 +336,13 @@
             <aside class="key-win">
               <h4 class="key-win__title"><span aria-hidden="true">🏆</span> <span class="l-ru">Ключевые достижения</span><span class="l-en">Key achievements</span></h4>
               <ul class="key-win__list l-ru">
-                <li><span class="hl-gold">40+</span> фич‑модулей, ускорение сборки на <span class="hl-gold">30–40%</span>.</li>
+                <li><span class="hl-gold">40+</span> фич‑модулей, ускорение сборки на <span class="hl-gold">19–24%</span>.</li>
                 <li><span class="hl-gold">service-driving UI</span> — цикл типовой фичи сократил с <span class="hl-gold">~1,5 месяца до ~3 недель</span>.</li>
                 <li><span class="hl-gold">3‑е место</span> в Баготоне ГПБ (&gt;90 багов в мобильном банке), <span class="hl-gold">грамота</span> за 2023.</li>
                 <li><span class="hl-gold">SwiftUI</span> для команды: отличия от UIKit, интеграция в стек, плюсы/минусы и <span class="hl-gold">договорённость по шагам</span> внедрения.</li>
               </ul>
               <ul class="key-win__list l-en">
-                <li><span class="hl-gold">40+</span> feature modules, <span class="hl-gold">30–40%</span> faster builds.</li>
+                <li><span class="hl-gold">40+</span> feature modules, <span class="hl-gold">19–24%</span> faster builds.</li>
                 <li><span class="hl-gold">service-driving UI</span> — cut a typical feature cycle from <span class="hl-gold">~6 weeks to ~3 weeks</span>.</li>
                 <li><span class="hl-gold">3rd place</span> bugathon (90+ mobile bank bugs), <span class="hl-gold">2023</span> certificate.</li>
                 <li><span class="hl-gold">SwiftUI</span> session for the team: vs UIKit, integration, trade-offs, and <span class="hl-gold">aligned next steps</span> for adoption.</li>
@@ -368,8 +357,8 @@
             <span class="card-meta l-ru">окт. 2020 — февр. 2022 · 1 г. 5 мес.</span>
             <span class="card-meta l-en">Oct 2020 — Feb 2022 · 1 yr 5 mo</span>
           </div>
-          <p class="card-company l-ru">Минск · Middle iOS</p>
-          <p class="card-company l-en">Minsk · Middle iOS</p>
+          <p class="card-company l-ru">Минск · Senior iOS</p>
+          <p class="card-company l-en">Minsk · Senior iOS</p>
           <div class="exp-card__body">
             <div class="exp-card__main">
               <ul>
@@ -411,12 +400,12 @@
         <article class="card exp-card">
           <div class="card-head">
             <h3 style="margin:0;"><span class="l-ru">NLP (мед. стартап)</span><span class="l-en">NLP (medical startup)</span></h3>
-            <span class="card-meta l-ru">сент. 2020 — окт. 2021 · 1 г. 2 мес.</span>
-            <span class="card-meta l-en">Sep 2020 — Oct 2021 · 1 yr 2 mo</span>
+            <span class="card-meta l-ru">окт. 2020 — окт. 2021 · 1 г. 1 мес.</span>
+            <span class="card-meta l-en">Oct 2020 — Oct 2021 · 1 yr 1 mo</span>
           </div>
           <p class="card-company l-ru">Москва · медицина, клинические исследования · приложение PulseWave</p>
           <p class="card-company l-en">Moscow · medicine, clinical research · PulseWave app</p>
-          <p class="card-role">iOS Lead</p>
+          <p class="card-role">Senior iOS Developer</p>
           <div class="exp-card__body">
             <div class="exp-card__main">
               <ul>
@@ -571,20 +560,24 @@
 
         <article class="card exp-card">
           <div class="card-head">
-            <h3 style="margin:0;"><span class="l-ru">Стартап И. Арзуманяна</span><span class="l-en">Ilya Arzumanyan startup</span></h3>
+            <h3 style="margin:0;"><span class="l-ru">Автопомощь</span><span class="l-en">Avtohelp</span></h3>
             <span class="card-meta l-ru">март 2018 — июнь 2019 · 1 г. 4 мес.</span>
             <span class="card-meta l-en">Mar 2018 — Jun 2019 · 1 yr 4 mo</span>
           </div>
+          <p class="card-company l-ru">Краснодар · соцсеть автопомощи на дорогах</p>
+          <p class="card-company l-en">Krasnodar · roadside assistance social network</p>
           <p class="card-role">Junior iOS Developer</p>
           <div class="exp-card__body">
             <div class="exp-card__main">
               <ul>
-                <li class="l-ru">Реализовал: разработка части главного экрана приложения; профиль; исправлял ошибки, совершенствуя навыки мобильной разработки.</li>
-                <li class="l-en">Built part of the home screen and profile; fixed bugs while growing mobile skills.</li>
-                <li class="l-ru">Процессы: Trello, еженедельные дейли.</li>
-                <li class="l-en">Process: Trello, weekly dailies.</li>
-                <li class="l-ru">Стек: MVP, MVC + C, Alamofire, Kingfisher.</li>
-                <li class="l-en">Stack: MVP, MVC + C, Alamofire, Kingfisher.</li>
+                <li class="l-ru">Разрабатывал iOS‑клиент соцсети автопомощи на дорогах.</li>
+                <li class="l-en">Developed the iOS client for a roadside assistance social network.</li>
+                <li class="l-ru">Реализовал части главного экрана и профиля; поддерживал продукт и исправлял баги.</li>
+                <li class="l-en">Built parts of home screen and profile; maintained the product and fixed bugs.</li>
+                <li class="l-ru">Процессы: Trello, еженедельные дейли и планирование.</li>
+                <li class="l-en">Process: Trello, weekly dailies and planning.</li>
+                <li class="l-ru">Стек: Swift, UIKit, MVP, MVC + Coordinator, Alamofire, Kingfisher, CocoaPods, Push Notifications, CoreLocation, JSON, Git, CI/CD, GCD / Multithreading, REST API, Figma, Trello, Xcode, iOS SDK.</li>
+                <li class="l-en">Stack: Swift, UIKit, MVP, MVC + Coordinator, Alamofire, Kingfisher, CocoaPods, Push Notifications, CoreLocation, JSON, Git, CI/CD, GCD / Multithreading, REST API, Figma, Trello, Xcode, iOS SDK.</li>
               </ul>
               <p class="store-app-removed l-ru">Приложение в App Store более недоступно.</p>
               <p class="store-app-removed l-en">The app is no longer available on the App Store.</p>
@@ -693,224 +686,6 @@
       </section>
     </div>
 
-    <article id="panel-ats" class="ats-doc ats-doc--ref" hidden aria-label="ATS">
-      <header class="ats-doc__head">
-        <div class="ats-doc__head-top">
-          <h1 class="ats-doc__h1"><span class="l-ru">Скриганюк Виталий</span><span class="l-en">VITALII SKRIGANIUK</span></h1>
-          <p class="ats-doc__tagline"><span class="l-ru">Senior / Team Lead iOS · удалённо</span><span class="l-en">Senior / Team Lead iOS · remote</span></p>
-        </div>
-        <ul class="ats-doc__contact-list">
-          <li><a href="mailto:vetalskri@gmail.com">vetalskri@gmail.com</a></li>
-          <li><a href="https://t.me/dev_vito" target="_blank" rel="noopener noreferrer">Telegram @dev_vito</a></li>
-          <li><a href="https://www.linkedin.com/in/vitalii-skriganyuk/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-          <li><a href="https://hh.ru" target="_blank" rel="noopener noreferrer"><span class="l-ru">HeadHunter</span><span class="l-en">HeadHunter</span></a></li>
-        </ul>
-        <p class="ats-doc__meta l-ru"><strong>Гражданство:</strong> 🇷🇺 Россия · 🇪🇪 Эстония</p>
-        <p class="ats-doc__meta l-en"><strong>Citizenship:</strong> 🇷🇺 Russia · 🇪🇪 Estonia</p>
-        <p class="ats-doc__meta l-ru"><strong>Право на работу:</strong> Россия, Европейский союз 🇪🇺 · готов к переезду</p>
-        <p class="ats-doc__meta l-en"><strong>Work authorization:</strong> Russia, European Union 🇪🇺 · open to relocation</p>
-      </header>
-
-      <section class="ats-doc__sec l-ru">
-        <h2>Обо мне</h2>
-        <p>Senior / Team Lead iOS — 8+ лет коммерческого опыта в iOS: бигтех-компании и стартапы, в сфере финтеха, медиа и стриминга, маркетплейсов. В Okko — лид спорт‑направления (7 чел.), сходимость спринтов 20–40% → 80–90% за месяц, BugRate к целевому уровню, RnD под новые платформы. В Газпромбанке — грамота за успехи (2023), 3‑е место в Баготоне; 40+ фич‑модулей, ускорение сборки ~30–40%, презентация SwiftUI и шаги внедрения; ускорение МВП на service-driving UI (~1,5 мес. → ~3 нед.). В WhyNot — собственный B2C dating с нуля: PO + Lead iOS end‑to‑end, аналитика, backend, UX/UI. Фокус на качестве поставки и влиянии на конечный продукт.</p>
-        <h2>Цель</h2>
-        <p>Senior или Lead iOS. Комфортно в неопределённости процессов, если можно на них влиять и доводить до рабочего контура. Готов нести ответственность за зону (люди, сроки, качество) и влиять на конечный результат продукта. Полная занятость, удалённо; готов к редким командировкам.</p>
-        <h2>Навыки (ключевые слова)</h2>
-        <div class="ats-doc__skills">
-        <p><strong>iOS / разработка:</strong> Swift, Objective-C, UIKit, SwiftUI, async/await, GCD, Combine, RxSwift.</p>
-        <p><strong>Фреймворки и SDK:</strong> URLSession, Alamofire, Moya, Core Data, Lottie, Swinject, Firebase, Kingfisher, ObjectMapper, Socket.IO, Keychain, AVFoundation, MapKit, Core Animation, CoreLocation, PushNotifications, SnapKit.</p>
-        <p><strong>Тестирование:</strong> XCTest, TDD, swift-snapshot-testing.</p>
-        <p><strong>DevOps и инфраструктура:</strong> CocoaPods, SPM, Tuist, SwiftLint, SwiftGen, Jenkins, Bash, CI/CD, Git, Bitbucket, GitLab.</p>
-        <p><strong>Архитектура:</strong> MVC, MVP, MVVM, VIPER, CleanSwift, Coordinators, SOLID, OOP.</p>
-        <p><strong>Инструменты:</strong> Xcode, Instruments, Cursor, Proxyman, Charles, Git, Figma.</p>
-        <p><strong>Процессы:</strong> Jira, Confluence, Scrum, code review, team lead.</p>
-        </div>
-        <h2>Опыт</h2>
-        <div class="ats-job-list">
-        <div class="ats-job">
-          <div class="ats-job__head">
-            <p class="ats-job__titleblock"><span class="ats-job__company">WhyNot</span><span class="ats-job__sep"> · </span><span class="ats-job__role">Founder &amp; Lead iOS</span></p>
-            <span class="ats-job__dates">Сентябрь 2025 — май 2026 · 9 мес.</span>
-          </div>
-          <p class="ats-job__desc"><strong>Founder &amp; Lead iOS.</strong> Сайт: https://whynotdate.ru. На себе: product owner, продуктовая аналитика (события и воронки Firebase GA4), основной UX/UI и макеты, Lead iOS, координация backend и приёмка API. Команда: backend, QA, Junior iOS; ускорение итераций с Cursor/Codex без замены инженерных решений. iOS: клиент целиком на SwiftUI (async/await, Combine); модульность SPM; чат на WebSocket (Socket.IO); пуши с доставкой до UI и диплинки; гео и сценарии «рядом / в городе». Согласование контрактов API и realtime‑слоя с backend; внутренние сервисные инструменты — вне зоны iOS. Процессы: Git, feature‑ветки, согласование API и релизные циклы iOS + backend. Стек: SwiftUI, async/await, Combine, Socket.IO, SPM, Firebase, CoreLocation, Push Notifications, URLSession.</p>
-        </div>
-        <div class="ats-job">
-          <div class="ats-job__head">
-            <p class="ats-job__titleblock"><span class="ats-job__company">Okko</span><span class="ats-job__sep"> · </span><span class="ats-job__role">Team Lead iOS</span></p>
-            <span class="ats-job__dates">Июнь 2025 — сентябрь 2025 · 4 мес.</span>
-          </div>
-          <p class="ats-job__desc"><strong>Team Lead iOS</strong>, Санкт‑Петербург. Лидировал спорт‑направление: 7 человек (4 iOS, 3 QA). Сходимость спринтов с 20–40% до 80–90% за месяц; BugRate с 1400 до целевых 1200 поинтов к концу квартала. RnD iOS 26 для iOS, iPadOS, tvOS, документация критичных точек на Q4. Крупная фича «лента других трансляций» сдана раньше срока, разгрузка Q3/Q4. Процессы: Jira, Confluence, Bitbucket, Agile, code review, релизный процесс (FT), Git flow. Стек: CleanSwift, Coordinators, Swinject, Tuist, мульти‑модульная архитектура, SwiftUI, async/await, Combine, SwiftLint, SwiftGen, CoreData, SnapKit, Firebase, UIKit, GCD, CI/CD.</p>
-        </div>
-        <div class="ats-job">
-          <div class="ats-job__head">
-            <p class="ats-job__titleblock"><span class="ats-job__company">Газпромбанк</span><span class="ats-job__sep"> · </span><span class="ats-job__role">Lead / Senior iOS</span></p>
-            <span class="ats-job__dates">Март 2022 — май 2025 · 3 г. 2 мес.</span>
-          </div>
-          <p class="ats-job__desc"><strong>Lead / Senior iOS</strong>, Москва. Вырос с Senior до Team Lead. Презентация SwiftUI для команды: отличия от UIKit, интеграция в стек, плюсы/минусы, договорённость по шагам внедрения. Мульти‑модульная архитектура: 40+ фич‑модулей, ускорение сборки на 30–40%, DesignSystem, Core, Foundation. Ускорение МВП на service-driving UI: сократил цикл типовой фичи примерно с полутора месяцев до трёх недель. Крупные фичи: опросы (как stories), синхронизация системной и внутренней темы, рефактор сканера карт на Objective‑C, кредитный рейтинг, профиль и госуслуги, регистрация и авторизация, лайт‑клиенты, привязанные устройства, пуши, вход и безопасность. Онбординг и обучение middle‑разработчиков, 1:1, менторство, груминг, техдизайны, ретро, релизный процесс FT/FF модулей команды. 3‑е место в Баготоне ГПБ (&gt;90 багов в мобильном банке), грамота за 2023. Процессы: Jira, Confluence, self‑hosted GitLab, Agile, code review, Git flow. Стек: UIKit, SwiftUI, async/await, VIPER, Coordinators, Swinject, CocoaPods, SPM, RxSwift, SwiftLint, SwiftGen, CoreData, SnapKit, Lottie, Firebase, GCD, Combine, RxCocoa.</p>
-        </div>
-        <div class="ats-job">
-          <div class="ats-job__head">
-            <p class="ats-job__titleblock"><span class="ats-job__company">Ярмарка Мастеров (Livemaster)</span><span class="ats-job__sep"> · </span><span class="ats-job__role">Middle iOS</span></p>
-            <span class="ats-job__dates">Октябрь 2020 — февраль 2022 · 1 г. 5 мес.</span>
-          </div>
-          <p class="ats-job__desc"><strong>Middle iOS</strong>, Минск. Интеграции Cappasity, Почта России, DPD. Реализованы программа привилегий, профиль покупатель/мастер, рефакторинг главного экрана на Composition Layout, Push Extension для гарантированной доставки уведомлений, 3D‑скан товара и визуализация в магазине. Agile (Scrum, story points, ретро), code review, Jira. Стек: MVVM + Router, SnapKit, Firebase, Alamofire, ObjectMapper, RxSwift, RxCocoa.</p>
-        </div>
-        <div class="ats-job">
-          <div class="ats-job__head">
-            <p class="ats-job__titleblock"><span class="ats-job__company">NLP (PulseWave)</span><span class="ats-job__sep"> · </span><span class="ats-job__role">iOS Lead</span></p>
-            <span class="ats-job__dates">Сентябрь 2020 — октябрь 2021 · 1 г. 2 мес.</span>
-          </div>
-          <p class="ats-job__desc"><strong>iOS Lead</strong>, медицинский стартап, Москва. Пульс с камеры и вспышкой в реальном времени; не в App Store — не пройдена мед. валидация. Многопоточное ускорение алгоритма с отменой, анимация волны, история с графиками, привязанные устройства, боковое меню, несколько схем приложений под ограничения стора. Собеседования iOS в команду, код‑ревью всех со всеми, квартальные цели, Jira. Стек: MVVM + C, SnapKit, UIKit, Firebase, Alamofire, CoreData, Kingfisher, ObjectMapper.</p>
-        </div>
-        <div class="ats-job">
-          <div class="ats-job__head">
-            <p class="ats-job__titleblock"><span class="ats-job__company">EPN · Backit (cashback)</span><span class="ats-job__sep"> · </span><span class="ats-job__role">iOS Developer</span></p>
-            <span class="ats-job__dates">Июнь 2020 — октябрь 2020 · 5 мес.</span>
-          </div>
-          <p class="ats-job__desc"><strong>iOS Developer</strong>, Казань. Банковский кошелёк, новая навигация, рефактор UI с фреймов на Auto Layout, отказ от Storyboards в пользу программной вёрстки. Собеседования iOS, Scrum, Jira, code review. Стек: MVVM + C, SnapKit, Alamofire, CoreData, Kingfisher.</p>
-        </div>
-        <div class="ats-job">
-          <div class="ats-job__head">
-            <p class="ats-job__titleblock"><span class="ats-job__company">Кубань Кредит</span><span class="ats-job__sep"> · </span><span class="ats-job__role">Middle iOS</span></p>
-            <span class="ats-job__dates">Октябрь 2019 — июнь 2020 · 9 мес.</span>
-          </div>
-          <p class="ats-job__desc"><strong>Middle iOS</strong>, Краснодар. Интеграция СБП раньше конкурентов (кроме СберБанка). Переводы между физлицами, система пушей со снижением расходов на SMS около 60%, Push Extension для гарантированной доставки. Собрана команда из 3 iOS; Jira, Scrum, code review, Redmine. Стек: MVP, MVVM + C, SnapKit, Keychain, EasyDi, CoreData, Kingfisher.</p>
-        </div>
-        <div class="ats-job">
-          <div class="ats-job__head">
-            <p class="ats-job__titleblock"><span class="ats-job__company">EPAM Systems</span><span class="ats-job__sep"> · </span><span class="ats-job__role">Trainee Junior Software Developer</span></p>
-            <span class="ats-job__dates">Июль 2019 — сентябрь 2019 · 3 мес.</span>
-          </div>
-          <p class="ats-job__desc"><strong>Trainee Junior Software Developer</strong>, Москва. TDD, unit tests, миграции CoreData, code review, RxSwift, вёрстка на SnapKit, MVP/MVC, SOLID, Route/Coordinator, Clean Swift. Trello, DesignSync. Стек: MVP, MVC + R, EasyDi.</p>
-        </div>
-        <div class="ats-job">
-          <div class="ats-job__head">
-            <p class="ats-job__titleblock"><span class="ats-job__company">Стартап Ильи Арзуманяна</span><span class="ats-job__sep"> · </span><span class="ats-job__role">Junior iOS Developer</span></p>
-            <span class="ats-job__dates">Март 2018 — июнь 2019 · 1 г. 4 мес.</span>
-          </div>
-          <p class="ats-job__desc"><strong>Junior iOS Developer.</strong> Часть главного экрана и профиль, исправление багов, рост в мобильной разработке. Trello, еженедельные дейли. Стек: MVP, MVC + C, Alamofire, Kingfisher.</p>
-        </div>
-        </div>
-        <h2>Образование</h2>
-        <div class="ats-edu">
-          <div class="ats-edu__row">
-            <span class="ats-edu__degree">МТИ — программист мобильных приложений</span>
-            <span class="ats-edu__dates">2025 — н.в.</span>
-          </div>
-          <p class="ats-edu__detail">Московский технологический институт (МТИ). Программирование мобильных приложений.</p>
-          <p class="ats-edu__note">Обучаюсь</p>
-          <div class="ats-edu__row">
-            <span class="ats-edu__degree">Бакалавр</span>
-            <span class="ats-edu__dates">2018 — 2022</span>
-          </div>
-          <p class="ats-edu__detail">Фундаментальная информатика и информационные технологии. Кубанский государственный университет, Краснодар, ФКТиПИ.</p>
-          <p class="ats-edu__note">Неоконченное высшее</p>
-        </div>
-        <h2>Языки</h2>
-        <p class="ats-langs">🇷🇺 Русский — родной · 🇬🇧 Английский — B2 (средне‑продвинутый)</p>
-      </section>
-
-      <section class="ats-doc__sec l-en">
-        <h2>About</h2>
-        <p>Senior / Team Lead iOS — 8+ years of commercial experience in iOS: big-tech companies and startups in fintech, media and streaming, and marketplaces. At Okko — lead for the sports squad (7 people), sprint predictability 20–40% to 80–90% in a month, BugRate to target, RnD for new platforms. At Gazprombank — 2023 merit certificate for strong performance, 3rd in bugathon; 40+ feature modules, ~30–40% faster builds, SwiftUI team presentation and rollout; faster MVP with service-driving UI (~6 weeks → ~3 weeks). At WhyNot — own B2C dating from scratch: PO + Lead iOS end-to-end, analytics, backend, UX/UI. Focus on delivery quality and impact on the end product.</p>
-        <h2>Target</h2>
-        <p>Senior or Lead iOS. Comfortable with process uncertainty when I can shape it and land a working rhythm. Ready to own people, timelines, and quality, and to influence the end product. Full-time, remote; open to occasional business trips.</p>
-        <h2>Skills (keywords)</h2>
-        <div class="ats-doc__skills">
-        <p><strong>iOS development:</strong> Swift, Objective-C, UIKit, SwiftUI, async/await, GCD, Combine, RxSwift.</p>
-        <p><strong>Frameworks &amp; SDKs:</strong> URLSession, Alamofire, Moya, Core Data, Lottie, Swinject, Firebase, Kingfisher, ObjectMapper, Socket.IO, Keychain, AVFoundation, MapKit, Core Animation, CoreLocation, PushNotifications, SnapKit.</p>
-        <p><strong>Testing:</strong> XCTest, TDD, swift-snapshot-testing.</p>
-        <p><strong>DevOps &amp; infrastructure:</strong> CocoaPods, SPM, Tuist, SwiftLint, SwiftGen, Jenkins, Bash, CI/CD, Git, Bitbucket, GitLab.</p>
-        <p><strong>Architecture:</strong> MVC, MVP, MVVM, VIPER, CleanSwift, Coordinators, SOLID, OOP.</p>
-        <p><strong>Tools:</strong> Xcode, Instruments, Cursor, Proxyman, Charles, Git, Figma.</p>
-        <p><strong>Process:</strong> Jira, Confluence, Scrum, code review, team lead.</p>
-        </div>
-        <h2>Experience</h2>
-        <div class="ats-job-list">
-        <div class="ats-job">
-          <div class="ats-job__head">
-            <p class="ats-job__titleblock"><span class="ats-job__company">WhyNot</span><span class="ats-job__sep"> · </span><span class="ats-job__role">Founder &amp; Lead iOS</span></p>
-            <span class="ats-job__dates">Sep 2025 — May 2026 · 9 mo</span>
-          </div>
-          <p class="ats-job__desc"><strong>Founder &amp; Lead iOS.</strong> Website: https://whynotdate.ru. Roles: product owner, product analytics (Firebase GA4 events and funnels), primary UX/UI and layouts, Lead iOS, backend coordination and API acceptance. Team: backend, QA, Junior iOS; Cursor/Codex for faster iterations without replacing engineering decisions. iOS: fully SwiftUI client (async/await, Combine); modular SPM; WebSocket chat (Socket.IO); push to UI with deeplinks; geo and nearby/same-city flows. API contracts and realtime integration with backend; internal service-side tooling outside the iOS scope. Process: Git, feature branches, API alignment and iOS + backend release cycles. Stack: SwiftUI, async/await, Combine, Socket.IO, SPM, Firebase, CoreLocation, Push Notifications, URLSession.</p>
-        </div>
-        <div class="ats-job">
-          <div class="ats-job__head">
-            <p class="ats-job__titleblock"><span class="ats-job__company">Okko</span><span class="ats-job__sep"> · </span><span class="ats-job__role">Team Lead iOS</span></p>
-            <span class="ats-job__dates">Jun 2025 — Sep 2025 · 4 mo</span>
-          </div>
-          <p class="ats-job__desc"><strong>Team Lead iOS</strong>, St. Petersburg. Led the sports squad of 7 (4 iOS, 3 QA). Sprint predictability from 20–40% to 80–90% in a month; BugRate from 1400 to target 1200 by quarter end. Deep RnD for iOS 26 on iOS, iPadOS, tvOS; critical-path docs for Q4. “Other broadcasts” feature delivered ahead of schedule, easing Q3/Q4. Processes: Jira, Confluence, Bitbucket, Agile, code review, release process (FT), Git flow. Stack: CleanSwift, Coordinators, Swinject, Tuist, multi modular architecture, SwiftUI, async/await, Combine, SwiftLint, SwiftGen, CoreData, SnapKit, Firebase, UIKit, GCD, CI/CD.</p>
-        </div>
-        <div class="ats-job">
-          <div class="ats-job__head">
-            <p class="ats-job__titleblock"><span class="ats-job__company">Gazprombank</span><span class="ats-job__sep"> · </span><span class="ats-job__role">Lead / Senior iOS</span></p>
-            <span class="ats-job__dates">Mar 2022 — May 2025 · 3 yrs 2 mo</span>
-          </div>
-          <p class="ats-job__desc"><strong>Lead / Senior iOS</strong>, Moscow. Grew from Senior to team lead. SwiftUI session for the team: vs UIKit, integration, trade-offs, aligned adoption steps. Multi-module architecture: 40+ feature modules, ~30–40% faster builds, DesignSystem, Core, Foundation. MVP acceleration with service-driving UI: cut a typical feature cycle from about six weeks to about three. Major features: surveys (stories-like), system vs in-app theme sync, Obj-C card scanner UI refactor, credit score, profile and e-gov, registration and auth, light clients, trusted devices, push, login and security. Onboarding and training for mid developers, 1:1s, mentoring, grooming, tech design, retros, FT/FF releases for team modules. 3rd in Gazprombank bugathon (90+ mobile bank bugs), 2023 merit certificate. Processes: Jira, Confluence, self-hosted GitLab, Agile, code review, Git flow. Stack: UIKit, SwiftUI, async/await, VIPER, Coordinators, Swinject, CocoaPods, SPM, RxSwift, SwiftLint, SwiftGen, CoreData, SnapKit, Lottie, Firebase, GCD, Combine, RxCocoa.</p>
-        </div>
-        <div class="ats-job">
-          <div class="ats-job__head">
-            <p class="ats-job__titleblock"><span class="ats-job__company">Livemaster</span><span class="ats-job__sep"> · </span><span class="ats-job__role">Middle iOS</span></p>
-            <span class="ats-job__dates">Oct 2020 — Feb 2022 · 1 yr 5 mo</span>
-          </div>
-          <p class="ats-job__desc"><strong>Middle iOS</strong>, Minsk. Integrations: Cappasity, Russian Post, DPD. Shipped loyalty program, buyer/maker profile, home screen refactor to Composition Layout, Push Extension for reliable delivery, 3D product scan and in-store visualization. Agile (Scrum, story points, retros), code review, Jira. Stack: MVVM + Router, SnapKit, Firebase, Alamofire, ObjectMapper, RxSwift, RxCocoa.</p>
-        </div>
-        <div class="ats-job">
-          <div class="ats-job__head">
-            <p class="ats-job__titleblock"><span class="ats-job__company">NLP (PulseWave)</span><span class="ats-job__sep"> · </span><span class="ats-job__role">iOS Lead</span></p>
-            <span class="ats-job__dates">Sep 2020 — Oct 2021 · 1 yr 2 mo</span>
-          </div>
-          <p class="ats-job__desc"><strong>iOS Lead</strong>, medical startup, Moscow. Real-time pulse from camera/flash; not on the App Store — medical validation not passed. Multithreaded algorithm with cancellation, pulse wave animation, history with charts, paired devices, side drawer, multiple app schemes for store limits. iOS hiring interviews, everyone-reviews-everyone code review, quarterly goals, Jira. Stack: MVVM + C, SnapKit, UIKit, Firebase, Alamofire, CoreData, Kingfisher, ObjectMapper.</p>
-        </div>
-        <div class="ats-job">
-          <div class="ats-job__head">
-            <p class="ats-job__titleblock"><span class="ats-job__company">EPN · Backit (cashback)</span><span class="ats-job__sep"> · </span><span class="ats-job__role">iOS Developer</span></p>
-            <span class="ats-job__dates">Jun 2020 — Oct 2020 · 5 mo</span>
-          </div>
-          <p class="ats-job__desc"><strong>iOS Developer</strong>, Kazan. Bank wallet, new navigation, UI refactor from frames to Auto Layout, programmatic UI instead of storyboards. iOS interviews, Scrum, Jira, code review. Stack: MVVM + C, SnapKit, Alamofire, CoreData, Kingfisher.</p>
-        </div>
-        <div class="ats-job">
-          <div class="ats-job__head">
-            <p class="ats-job__titleblock"><span class="ats-job__company">Kuban Credit</span><span class="ats-job__sep"> · </span><span class="ats-job__role">Middle iOS</span></p>
-            <span class="ats-job__dates">Oct 2019 — Jun 2020 · 9 mo</span>
-          </div>
-          <p class="ats-job__desc"><strong>Middle iOS</strong>, Krasnodar. FPS integration ahead of competitors except Sberbank. P2P transfers for retail customers, push system cutting SMS costs by about 60%, Push Extension for guaranteed delivery. Built a 3-person iOS team; Jira, Scrum, code review, Redmine. Stack: MVP, MVVM + C, SnapKit, Keychain, EasyDi, CoreData, Kingfisher.</p>
-        </div>
-        <div class="ats-job">
-          <div class="ats-job__head">
-            <p class="ats-job__titleblock"><span class="ats-job__company">EPAM Systems</span><span class="ats-job__sep"> · </span><span class="ats-job__role">Trainee Junior Software Developer</span></p>
-            <span class="ats-job__dates">Jul 2019 — Sep 2019 · 3 mo</span>
-          </div>
-          <p class="ats-job__desc"><strong>Trainee Junior Software Developer</strong>, Moscow. TDD, unit tests, CoreData migrations, code review, RxSwift, layout with SnapKit, MVP/MVC, SOLID, routing/coordinators, Clean Swift. Trello, DesignSync. Stack: MVP, MVC + R, EasyDi.</p>
-        </div>
-        <div class="ats-job">
-          <div class="ats-job__head">
-            <p class="ats-job__titleblock"><span class="ats-job__company">Ilya Arzumanyan startup</span><span class="ats-job__sep"> · </span><span class="ats-job__role">Junior iOS Developer</span></p>
-            <span class="ats-job__dates">Mar 2018 — Jun 2019 · 1 yr 4 mo</span>
-          </div>
-          <p class="ats-job__desc"><strong>Junior iOS Developer.</strong> Part of home screen and profile, bug fixing and growing mobile skills. Trello, weekly dailies. Stack: MVP, MVC + C, Alamofire, Kingfisher.</p>
-        </div>
-        </div>
-        <h2>Education</h2>
-        <div class="ats-edu">
-          <div class="ats-edu__row">
-            <span class="ats-edu__degree">MTI — mobile application development</span>
-            <span class="ats-edu__dates">2025 — present</span>
-          </div>
-          <p class="ats-edu__detail">Moscow Technological Institute (MTI). Mobile application programming.</p>
-          <p class="ats-edu__note">In progress</p>
-          <div class="ats-edu__row">
-            <span class="ats-edu__degree">Bachelor&apos;s program (incomplete)</span>
-            <span class="ats-edu__dates">2018 — 2022</span>
-          </div>
-          <p class="ats-edu__detail">Fundamental informatics and information technology. Kuban State University, Krasnodar, FKTI&amp;IT.</p>
-          <p class="ats-edu__note">Incomplete degree</p>
-        </div>
-        <h2>Languages</h2>
-        <p class="ats-langs">🇷🇺 Russian — native · 🇬🇧 English — B2 (upper intermediate)</p>
-      </section>
-    </article>
   </main>
 
   <footer>

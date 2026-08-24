@@ -1,6 +1,6 @@
 /**
- * Собирает 4 готовых PDF (светлая палитра через @media print в styles.css):
- *   human + ru/en, ATS + ru/en
+ * Собирает 2 готовых PDF (светлая палитра через @media print в styles.css):
+ *   ru / en
  * Запуск: npm run export-pdfs
  * Нужен интернет (шрифты, внешние картинки в опыте).
  */
@@ -71,10 +71,8 @@ function startStaticServer() {
 }
 
 const JOBS = [
-  { view: "human", lang: "ru", file: "Skriganiuk-Vitalii-portfolio-human-ru.pdf" },
-  { view: "human", lang: "en", file: "Skriganiuk-Vitalii-portfolio-human-en.pdf" },
-  { view: "ats", lang: "ru", file: "Skriganiuk-Vitalii-CV-ATS-ru.pdf" },
-  { view: "ats", lang: "en", file: "Skriganiuk-Vitalii-CV-ATS-en.pdf" },
+  { lang: "ru", file: "Skriganiuk-Vitalii-CV-ru.pdf" },
+  { lang: "en", file: "Skriganiuk-Vitalii-CV-en.pdf" },
 ];
 
 async function main() {
@@ -99,8 +97,7 @@ async function main() {
     for (const job of JOBS) {
       const qs = new URLSearchParams();
       qs.set("lang", job.lang);
-      if (job.view !== "human") qs.set("view", job.view);
-      const url = `${base}/index.html${qs.toString() ? `?${qs}` : ""}`;
+      const url = `${base}/index.html?${qs}`;
       const outPath = path.join(OUT_DIR, job.file);
 
       await page.emulateMediaType("print");

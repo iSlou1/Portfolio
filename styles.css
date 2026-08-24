@@ -155,14 +155,14 @@ html[data-view="ats"] footer a {
   border-bottom: 1px solid var(--border);
 }
 
+.topbar-brand {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
 .view-toggle {
-  display: inline-flex;
-  flex-wrap: wrap;
-  gap: 0.25rem;
-  padding: 0.2rem;
-  border-radius: 10px;
-  background: var(--surface);
-  border: 1px solid var(--border);
+  display: none;
 }
 
 .view-toggle__btn {
