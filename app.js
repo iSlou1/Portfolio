@@ -3,6 +3,12 @@
   var LANG_KEY = "portfolio-lang";
   var THEME_KEY = "portfolio-theme";
 
+  // Legacy cleanup: ATS/Human toggle removed — never hide resume content
+  try {
+    localStorage.removeItem("portfolio-view");
+  } catch (e) {}
+  root.removeAttribute("data-view");
+
   function getStored(key, fallback) {
     try {
       return localStorage.getItem(key) || fallback;

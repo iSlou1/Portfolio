@@ -76,66 +76,9 @@ body {
   display: none !important;
 }
 
-/* ATS view: тот же светлый/тёмный режим, что и Human (chrome + фон из var) */
-html[data-view="ats"][data-theme="light"] {
-  color-scheme: light;
-  --ats-accent: #2563eb;
-  --ats-line: rgba(37, 99, 235, 0.38);
-}
-
-html[data-view="ats"][data-theme="dark"] {
-  color-scheme: dark;
-  --ats-accent: #5b9fff;
-  --ats-line: rgba(91, 159, 255, 0.42);
-}
-
-html[data-view="ats"] body {
-  background: var(--bg);
-  color: var(--text);
-}
-
-html[data-view="ats"] .wrap {
-  max-width: 720px;
-}
-
-html[data-view="ats"] .human-only {
-  display: none !important;
-}
-
-html[data-view="ats"] .topbar {
-  background: var(--topbar-bg);
-  border-bottom-color: var(--border);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-}
-
-html[data-view="ats"] .view-toggle {
-  background: var(--surface-2);
-  border-color: var(--border);
-}
-
-html[data-view="ats"] .view-toggle__btn:not(.is-active) {
-  color: var(--text-dim);
-}
-
-html[data-view="ats"] .btn:not(.btn-primary),
-html[data-view="ats"] .select-lang {
-  background: var(--surface);
-  border-color: var(--border);
-  color: var(--text);
-}
-
-html[data-view="ats"] .btn-theme {
-  color: var(--text);
-}
-
-html[data-view="ats"] footer {
-  color: var(--text-dim);
-  border-top-color: var(--border);
-}
-
-html[data-view="ats"] footer a {
-  color: var(--blue);
+/* Always show main resume content (ATS view removed) */
+.human-only {
+  display: block !important;
 }
 
 /* ——— Top bar ——— */
@@ -1224,13 +1167,12 @@ footer a {
     padding: 0;
   }
 
-  /* Human-friendly: печать / PDF — только визуальная версия */
-  html[data-view="human"] #panel-ats,
-  html[data-view="human"] #panel-ats[hidden] {
-    display: none !important;
+  /* Print / PDF — light palette, always show resume content */
+  .human-only {
+    display: block !important;
   }
 
-  html[data-view="human"] {
+  html {
     color-scheme: light;
     --bg: #fff;
     --bg-elevated: #fff;
@@ -1247,40 +1189,6 @@ footer a {
     --purple-dim: rgba(168, 85, 247, 0.1);
     --green-dim: rgba(34, 197, 94, 0.1);
     --gold-bg: rgba(212, 175, 55, 0.15);
-  }
-
-  /* ATS-friendly: в PDF только текст резюме */
-  html[data-view="ats"] .human-only {
-    display: none !important;
-  }
-
-  html[data-view="ats"] #panel-ats {
-    display: block !important;
-  }
-
-  html[data-view="ats"] #panel-ats[hidden] {
-    display: block !important;
-  }
-
-  html[data-view="ats"] {
-    color-scheme: light;
-    --bg: #fff;
-    --bg-elevated: #fff;
-    --surface: #fff;
-    --surface-2: #fafafa;
-    --border: rgba(15, 23, 42, 0.1);
-    --text: #0f172a;
-    --text-muted: #475569;
-    --text-dim: #64748b;
-    --topbar-bg: #fff;
-    --shadow: none;
-    --blue-dim: rgba(59, 130, 246, 0.1);
-    --red-dim: rgba(239, 68, 68, 0.08);
-    --purple-dim: rgba(168, 85, 247, 0.1);
-    --green-dim: rgba(34, 197, 94, 0.1);
-    --gold-bg: rgba(212, 175, 55, 0.15);
-    --ats-accent: #2563eb;
-    --ats-line: rgba(37, 99, 235, 0.38);
   }
 
   /* App Store chip: в PDF всегда светлый вид (как на light), не от data-theme */
