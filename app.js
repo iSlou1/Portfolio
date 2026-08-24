@@ -73,8 +73,8 @@
   var initialLang = params.get("lang");
   if (initialLang === "en" || initialLang === "ru") setLang(initialLang);
   else setLang(getStored(LANG_KEY, "ru"));
-  var storedTheme = getStored(THEME_KEY, "dark");
+  var storedTheme = getStored(THEME_KEY, "light");
   if (storedTheme === "light" || storedTheme === "dark") setTheme(storedTheme);
-  else setTheme("dark");
+  else setTheme("light");
   syncUrl();
 })();
