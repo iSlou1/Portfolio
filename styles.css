@@ -189,6 +189,13 @@ body {
   margin: 0.12rem 0;
 }
 
+.job-stack {
+  margin: 0.35rem 0 0;
+  font-size: 0.88rem;
+  line-height: 1.45;
+  color: var(--text);
+}
+
 .job strong,
 .skills strong {
   font-weight: 700;
