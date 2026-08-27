@@ -81,10 +81,18 @@ async function main() {
   const { server, port } = await startStaticServer();
   const base = `http://127.0.0.1:${port}`;
 
-  const browser = await puppeteer.launch({
+  const systemChrome =
+    process.env.PUPPETEER_EXECUTABLE_PATH ||
+    "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
+  const launchOpts = {
     headless: true,
     args: ["--font-render-hinting=none", "--disable-dev-shm-usage"],
-  });
+  };
+  if (fs.existsSync(systemChrome)) {
+    launchOpts.executablePath = systemChrome;
+  }
+
+  const browser = await puppeteer.launch(launchOpts);
 
   try {
     const page = await browser.newPage();
