@@ -111,6 +111,10 @@ async function main() {
       await page.emulateMediaType("print");
       await page.goto(url, { waitUntil: "networkidle0", timeout: 180000 });
       await page.evaluate(() => document.fonts.ready);
+      // Site chrome must never land in the CV PDF
+      await page.evaluate(() => {
+        document.querySelectorAll(".no-print, .topbar, footer").forEach((el) => el.remove());
+      });
 
       await page.pdf({
         path: outPath,
