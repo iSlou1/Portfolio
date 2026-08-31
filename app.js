@@ -47,7 +47,8 @@
     var lang = root.getAttribute("data-lang") || "ru";
     var filename = "Skriganiuk-Vitalii-CV-" + lang + ".pdf";
     var a = document.createElement("a");
-    a.href = "exports/" + filename;
+    // Prebuilt files only — cache-bust so GitHub Pages serves the latest export
+    a.href = "exports/" + filename + "?v=" + Date.now();
     a.download = filename;
     a.rel = "noopener";
     document.body.appendChild(a);
